@@ -39,7 +39,7 @@ const prepareObjects = (objects) => {
 // Загрузка карты и данных с сервера.
 // @ts-ignore
 const mapReady = ymaps.ready(initMap);
-const getData = fetch('/data-parser/data/yarina.json').then((dataJson) => dataJson.json());
+const getData = fetch('./data-parser/data/yarina.json').then((dataJson) => dataJson.json());
 
 /*
 Функция инициализации карты и кластеризатора. В этой функции определяется, как будут выглядеть кластеры на карте. 
